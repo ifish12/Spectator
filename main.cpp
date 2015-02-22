@@ -50,7 +50,7 @@ int main() {
     char dURL1[100] = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/";
     char dURL2[100] = "?api_key=";
     char dURL3[100] = API_KEY;
-    cout << "Which summoner do you wish to lookup?" << endl;
+    cout << "Who do you wish to spectate, summoner?" << endl;
     cin >> name;
  
     char fURL[225];
