@@ -58,8 +58,7 @@ int main() {
     strcat(fURL, name);
     strcat(fURL, dURL2);
     strcat(fURL, dURL3);
-    cout << fURL << endl;
-       
+    
     curl_global_init(CURL_GLOBAL_ALL); //pretty obvious
     curl = curl_easy_init();
     
@@ -91,7 +90,7 @@ int main() {
         strcat(cmfURL, cmURL2);
         strcat(cmfURL, cmURL3);
         strcat(cmfURL, cmURL4);
-        cout << cmfURL << endl;
+        //cout << cmfURL << endl;
         
         curl_easy_setopt(curl, CURLOPT_URL,cmfURL);  // Preparing our CURL object
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &writeCallback);
@@ -101,8 +100,8 @@ int main() {
             int gameId = root["gameId"].asInt();
             const char *encrypy = root["observers"]["encryptionKey"].asCString();
             
-            cout << gameId << endl;
-            cout << encrypy;
+            //cout << gameId << endl;
+            //cout << encrypy;
             
             char result[9999];
             char result2[9999];
